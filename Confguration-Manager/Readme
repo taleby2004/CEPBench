@@ -7,7 +7,8 @@ In this project one configuration manager is created. You can set different para
 5.	The number of files for created events(each file for one machine)
 6.	The method od dispatching (round robin , …)
 7.	 …
-Then one configuration file is built. This file will be used by the event generator to cgenerate events.
+Then one configuration file is built. This file will be used by the event generator to generate events.
 Summary:
 Project input: parameters
-Project output: an Xml configuration file
+Project output: An Xml configuration file
+
