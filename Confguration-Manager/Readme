@@ -1,0 +1,13 @@
+
+In this project one configuration manager is created. You can set different parameters such as:
+1.	Number of event types. 
+2.	Number of attributes for each event type.
+3.	Distribution function for attributes. 
+4.	Rate of sending events.
+5.	The number of files for created events(each file for one machine)
+6.	The method od dispatching (round robin , …)
+7.	 …
+Then one configuration file is built. This file will be used by the event generator to cgenerate events.
+Summary:
+Project input: parameters
+Project output: an Xml configuration file
