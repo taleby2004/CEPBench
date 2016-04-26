@@ -9,6 +9,8 @@ In this project one configuration manager is created. You can set different para
 7.	 …
 Then one configuration file is built. This file will be used by the event generator to generate events.
 Summary:
-Project input: parameters
-Project output: An Xml configuration file
+Project input: parameters or input config file
+Project output: a serialized configuration file enriched with the parameter specified by the user , an objectenriched by the parameters set in the input file
+
+Developer: Mr. Barazesh, al73rna@gmail.com
 
