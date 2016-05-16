@@ -7,6 +7,7 @@ public class AddAttributeDialog extends JDialog {
     private JButton buttonCancel;
     private JComboBox comboBox1;
     private JTextField textField1;
+    private JComboBox comboBox2;
 
     public AddAttributeDialog() {
         setContentPane(contentPane);

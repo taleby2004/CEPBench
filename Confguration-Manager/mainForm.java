@@ -20,7 +20,6 @@ public class mainForm extends JFrame{
     private JTextField machineCount_textField;
     private JButton addRuleButton;
     private JComboBox comboBox1;
-    private JTextField textField1;
     private JButton setFilesPathButton;
     private JComboBox comboBox2;
     private AddRuleDialog addRuleDialog;
