@@ -11,7 +11,7 @@ public class mainForm extends JFrame{
     private JButton closeButton;
     private JButton openButton;
     private JButton saveButton;
-    private JButton addAtributeButton;
+    private JButton addEventButton;
     private JList machineCount_list;
     private JList list2;
     private JButton addMachineButton;
@@ -19,6 +19,9 @@ public class mainForm extends JFrame{
     private JCheckBox offlineCheckBox;
     private JTextField machineCount_textField;
     private JButton addRuleButton;
+    private JComboBox comboBox1;
+    private JTextField textField1;
+    private JButton setFilesPathButton;
     private AddRuleDialog addRuleDialog;
     private AddEventDialog addEventDialog;
     private AddMachineDialog addMachineDialog;
@@ -38,8 +41,8 @@ public class mainForm extends JFrame{
         addRuleButton.setActionCommand("showAddRule");
         offlineCheckBox.setActionCommand("changeMode");
         saveButton.setActionCommand("saveConfig");
-
-
+        addMachineButton.setActionCommand("showAddMachine");
+        addEventButton.setActionCommand("showAddEvent");
         addRuleButton.addComponentListener(new ComponentAdapter() {
         });
         addRuleButton.addActionListener(new ActionListener() {
@@ -58,11 +61,11 @@ public class mainForm extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 String command =  e.getActionCommand();
                 if (command == "showAddMachine"){
-                    addRuleDialog.main(null);
+                    addMachineDialog.main(null);
                 }
             }
         });
-        addAtributeButton.addActionListener(new ActionListener() {
+        addEventButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -102,6 +105,16 @@ public class mainForm extends JFrame{
 //                    filename.setText("You pressed cancel");
 //                    dir.setText("");
 //                }
+            }
+        });
+        addEventButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String command =  e.getActionCommand();
+                if (command == "showAddEvent")
+                {
+                    addEventDialog.main(null);
+                }
             }
         });
     }

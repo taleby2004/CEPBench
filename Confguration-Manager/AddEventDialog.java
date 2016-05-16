@@ -5,6 +5,7 @@ public class AddEventDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
+    private JTextField textField1;
 
     public AddEventDialog() {
         setContentPane(contentPane);

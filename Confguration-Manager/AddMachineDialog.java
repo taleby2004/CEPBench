@@ -5,8 +5,10 @@ public class AddMachineDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
-    private JTextArea textArea1;
-    private JCheckBox checkBox1;
+    private JCheckBox ZMQCheckBox;
+    private JTextField textField1;
+    private JTextField textField2;
+    private JTextField textField3;
 
     public AddMachineDialog() {
         setContentPane(contentPane);
